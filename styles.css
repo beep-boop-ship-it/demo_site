@@ -191,17 +191,38 @@ justify-content:center;
 display:none;
 }
 
+.trust-bar{
+display:flex;
+justify-content:center;
+gap:40px;
+padding:30px;
+background:white;
+font-weight:600;
+flex-wrap:wrap;
+}
+
 .whatsapp-btn{
-  position:fixed;
-  right:25px;
-  bottom:25px;
-  background:#25D366;
-  color:white;
-  padding:15px 20px;
-  border-radius:50px;
-  text-decoration:none;
-  font-weight:600;
-  z-index:999;
+position:fixed;
+right:25px;
+bottom:25px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+z-index:999;
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+color:#b98a2d;
+}
+
+footer p{
+margin-top:10px;
 }
 
 
