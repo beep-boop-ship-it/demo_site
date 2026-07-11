@@ -190,4 +190,21 @@ justify-content:center;
 .nav-links{
 display:none;
 }
+
+.whatsapp-btn{
+  position:fixed;
+  right:25px;
+  bottom:25px;
+  background:#25D366;
+  color:white;
+  padding:15px 20px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:600;
+  z-index:999;
+}
+
+
+
+  
 }
