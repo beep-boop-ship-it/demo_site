@@ -262,4 +262,45 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   }
 
+  // ----------------------------
+// MOBILE MENU
+// ----------------------------
+
+const menuBtn =
+  document.querySelector(".makhana-menu-btn");
+
+const mobileMenu =
+  document.querySelector(".mobile-menu");
+
+if(menuBtn && mobileMenu){
+
+  menuBtn.addEventListener("click", () => {
+
+    mobileMenu.classList.toggle("open");
+
+    document.body.classList.toggle("menu-open");
+
+    menuBtn.textContent =
+      mobileMenu.classList.contains("open")
+        ? "×"
+        : "●";
+  });
+
+  mobileMenu
+    .querySelectorAll("a")
+    .forEach(link => {
+
+      link.addEventListener("click", () => {
+
+        mobileMenu.classList.remove("open");
+
+        document.body.classList.remove("menu-open");
+
+        menuBtn.textContent = "●";
+      });
+
+    });
+
+}
+
 });
