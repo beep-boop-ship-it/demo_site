@@ -45,6 +45,23 @@ gap:30px;
 text-decoration:none;
 color:#161616;
 font-weight:600;
+transition:color .2s ease;
+}
+
+.nav-links a.active{
+color:#c89a39;
+}
+
+/* Hamburger button: hidden on desktop by default,
+   only shown on mobile (see media query below) */
+.makhana-menu-btn{
+display:none;
+background:none;
+border:none;
+font-size:34px;
+font-weight:800;
+cursor:pointer;
+color:#161616;
 }
 
 /* HERO */
@@ -491,13 +508,7 @@ font-size:18px;
 }
 
 .makhana-menu-btn{
-display:none;
-background:none;
-border:none;
-font-size:34px;
-font-weight:800;
-cursor:pointer;
-color:#161616;
+display:block;
 }
 
 .mobile-menu{
@@ -550,14 +561,6 @@ pointer-events:none;
 
 body.menu-open{
 overflow:hidden;
-}
-
-@media(max-width:768px){
-
-.makhana-menu-btn{
-display:block;
-}
-
 }
 
 }
