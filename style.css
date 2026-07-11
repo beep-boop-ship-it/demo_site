@@ -64,6 +64,62 @@ cursor:pointer;
 color:#161616;
 }
 
+/* Mobile menu panel: hidden by default at ALL widths.
+   Only ever revealed via JS adding the .open class
+   (which only happens through the hamburger button,
+   itself only visible on mobile). */
+.mobile-menu{
+position:fixed;
+inset:0;
+background:#faf7f1;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+gap:32px;
+z-index:9999;
+
+opacity:0;
+visibility:hidden;
+pointer-events:none;
+
+transition:.3s ease;
+}
+
+.mobile-menu.open{
+opacity:1;
+visibility:visible;
+pointer-events:auto;
+}
+
+.mobile-menu a{
+font-size:42px;
+font-weight:800;
+color:#161616;
+text-decoration:none;
+}
+
+.mobile-menu-footer{
+position:absolute;
+bottom:40px;
+font-size:18px;
+font-weight:700;
+letter-spacing:2px;
+}
+
+.mobile-menu::before{
+content:"MAKHANA";
+position:absolute;
+font-size:22vw;
+font-weight:800;
+opacity:.04;
+pointer-events:none;
+}
+
+body.menu-open{
+overflow:hidden;
+}
+
 /* HERO */
 
 .hero{
@@ -509,58 +565,6 @@ font-size:18px;
 
 .makhana-menu-btn{
 display:block;
-}
-
-.mobile-menu{
-position:fixed;
-inset:0;
-background:#faf7f1;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-gap:32px;
-z-index:9999;
-
-opacity:0;
-visibility:hidden;
-pointer-events:none;
-
-transition:.3s ease;
-}
-
-.mobile-menu.open{
-opacity:1;
-visibility:visible;
-pointer-events:auto;
-}
-
-.mobile-menu a{
-font-size:42px;
-font-weight:800;
-color:#161616;
-text-decoration:none;
-}
-
-.mobile-menu-footer{
-position:absolute;
-bottom:40px;
-font-size:18px;
-font-weight:700;
-letter-spacing:2px;
-}
-
-.mobile-menu::before{
-content:"MAKHANA";
-position:absolute;
-font-size:22vw;
-font-weight:800;
-opacity:.04;
-pointer-events:none;
-}
-
-body.menu-open{
-overflow:hidden;
 }
 
 }
