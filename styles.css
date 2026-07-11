@@ -149,6 +149,14 @@ line-height:1.8;
 .bulk{
 text-align:center;
 background:#fffaf0;
+padding:120px 8%;
+}
+
+.bulk p{
+max-width:900px;
+margin:0 auto 40px;
+font-size:20px;
+line-height:1.8;
 }
 
 footer{
